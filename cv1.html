@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Zahratul Maulida</title>
+
+```
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #eeeeee;
+        line-height: 1.45;
+    }
+
+    .cv {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 25px auto;
+        padding: 25px 28px;
+        background: white;
+        box-shadow: 0 0 12px rgba(0,0,0,.15);
+    }
+
+    /* HEADER */
+    .header {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        padding-bottom: 22px;
+        border-bottom: 4px solid #000000;
+    }
+
+    /* FOTO */
+    .photo {
+        width: 190px;
+        height: 190px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center 15%;
+        flex-shrink: 0;
+    }
+
+    .header-info {
+        flex: 1;
+    }
+
+    /* NAMA */
+    .name {
+        color: #000000;
+        font-size: 39px;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-bottom: 12px;
+    }
+
+    /* KONTAK */
+    .contact {
+        display: grid;
+        grid-template-columns: 35px 1fr;
+        row-gap: 8px;
+        color: #000000;
+        font-size: 17px;
+    }
+
+    .icon {
+        font-size: 23px;
+        color: #000000;
+    }
+
+    /* SECTION */
+    .section {
+        margin-top: 20px;
+    }
+
+    .section-title {
+        font-size: 29px;
+        font-weight: 700;
+        color: #000000;
+        padding-bottom: 8px;
+        margin-bottom: 18px;
+    }
+
+    .about {
+        font-size: 18px;
+        text-align: justify;
+        color: #000000;
+    }
+
+    .divider {
+        height: 4px;
+        background: #000000;
+        margin-top: 20px;
+    }
+
+    /* EDUCATION */
+    .education-item {
+        display: grid;
+        grid-template-columns: 245px 1fr;
+        margin-bottom: 23px;
+    }
+
+    .year {
+        color: #000000;
+        font-size: 18px;
+        font-weight: bold;
+        padding-left: 15px;
+    }
+
+    .year::before {
+        content: "•";
+        margin-right: 10px;
+    }
+
+    .school {
+        color: #000000;
+        font-size: 20px;
+    }
+
+    .detail {
+        font-size: 15px;
+        margin-top: 3px;
+        color: #000000;
+    }
+
+    /* EXPERIENCE */
+    .experience-title {
+        color: #000000;
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 7px;
+    }
+
+    .experience p {
+        font-size: 17px;
+        text-align: justify;
+        margin-left: 14px;
+        color: #000000;
+    }
+
+    .experience ul {
+        margin: 8px 0 0 42px;
+        font-size: 17px;
+        color: #000000;
+    }
+
+    /* SKILLS */
+    .skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .skills ul {
+        list-style: none;
+    }
+
+    .skills li {
+        color: #000000;
+        font-size: 16px;
+        margin-bottom: 8px;
+        padding-left: 15px;
+        position: relative;
+    }
+
+    .skills li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    /* CETAK */
+    @media print {
+        body {
+            background: white;
+        }
+
+        .cv {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 0;
+            box-shadow: none;
+        }
+    }
+
+    /* TAMPILAN HP */
+    @media (max-width: 800px) {
+        .cv {
+            width: 100%;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            gap: 20px;
+        }
+
+        .photo {
+            width: 130px;
+            height: 130px;
+        }
+
+        .name {
+            font-size: 28px;
+        }
+
+        .education-item {
+            grid-template-columns: 150px 1fr;
+        }
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+<div class="cv">
+
+```
+<!-- HEADER -->
+<header class="header">
+
+    <!-- FOTO -->
+    <img src="fotozahra.jpg"
+         alt="Foto Zahratul Maulida"
+         class="photo">
+
+    <div class="header-info">
+
+        <h1 class="name">ZAHRATUL MAULIDA</h1>
+
+        <div class="contact">
+
+            <span class="icon">📱</span>
+            <span>+62 858-4527-8573</span>
+
+            <span class="icon">>📧</span>
+            <span>zhraatulmllda@gmail.com</span>
+
+            <span class="icon">📍</span>
+            <span>
+                Perumahan Griya Permata Asri<br>
+                Jl. Wesser Blok F/67 RT 53
+            </span>
+
+        </div>
+
+    </div>
+</header>
+
+
+<!-- TENTANG SAYA -->
+<section class="section">
+
+    <h2 class="section-title">TENTANG SAYA</h2>
+
+    <p class="about">
+        Mahasiswa Bisnis Digital yang memiliki pengalaman membantu usaha keluarga
+        dalam menawarkan dan menjual makanan serta minuman kepada teman dan
+        lingkungan sekitar. Memiliki kemampuan komunikasi yang baik, mampu
+        berinteraksi dengan calon pembeli, dan memiliki ketertarikan pada bidang
+        pemasaran. Saya juga memiliki semangat belajar, bertanggung jawab, dan siap
+        mengembangkan kemampuan melalui pengalaman baru.
+    </p>
+
+    <div class="divider"></div>
+
+</section>
+
+
+<!-- PENDIDIKAN -->
+<section class="section">
+
+    <h2 class="section-title">PENDIDIKAN</h2>
+
+    <div class="education-item">
+
+        <div class="year">2023 - 2026</div>
+
+        <div>
+            <div class="school">
+                Madrasah Aliyah Negeri Balikpapan
+            </div>
+
+            <div class="detail">
+                Jurusan IPS
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="education-item">
+
+        <div class="year">2026 - 2030</div>
+
+        <div>
+
+            <div class="school">
+                Politeknik Negeri Banjarmasin
+            </div>
+
+            <div class="detail">
+                Jurusan : Administrasi Bisnis<br>
+                Program studi : Bisnis Digital
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PENGALAMAN -->
+<section class="section experience">
+
+    <h2 class="section-title">PENGALAMAN</h2>
+
+    <h3 class="experience-title">
+        Membantu Penjualan Usaha Keluarga
+    </h3>
+
+    <p>
+        Membantu menawarkan dan menjual produk makanan serta minuman kepada teman
+        dan lingkungan sekitar.
+    </p>
+
+    <ul>
+        <li>Menawarkan produk secara langsung kepada teman.</li>
+        <li>Melayani pesanan dan berkomunikasi dengan calon pembeli.</li>
+        <li>Membantu mencatat pesanan dan melakukan transaksi sederhana.</li>
+        <li>Mengenalkan produk kepada calon pembeli dengan cara yang ramah.</li>
+        <li>Membantu mempromosikan produk melalui komunikasi.</li>
+    </ul>
+
+    <div class="divider"></div>
+
+</section>
+
+
+<!-- KEMAMPUAN -->
+<section class="section">
+
+    <h2 class="section-title">KEMAMPUAN</h2>
+
+    <div class="skills">
+
+        <ul>
+            <li>Komunikasi dan pelayanan pelanggan</li>
+            <li>Menawarkan dan mempromosikan produk</li>
+            <li>Kemampuan berinteraksi dengan orang lain</li>
+            <li>Manajemen waktu</li>
+        </ul>
+
+        <ul>
+            <li>Membangun hubungan dengan pelanggan</li>
+            <li>Melayani dan menangani pesanan</li>
+            <li>Bertanggung jawab dan dapat dipercaya</li>
+            <li>Mau belajar dan beradaptasi</li>
+        </ul>
+
+        <ul>
+            <li>Mampu bekerja sama dalam tim</li>
+            <li>Mampu bekerja secara mandiri</li>
+            <li>Teliti dalam mencatat pesanan</li>
+            <li>Negosiasi sederhana</li>
+        </ul>
+
+    </div>
+
+</section>
+```
+
+</div>
+
+</body>
+</html>

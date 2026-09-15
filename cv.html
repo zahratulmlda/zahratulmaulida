@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Zahratul Maulida</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: white;
+            line-height: 1.5;
+            padding: 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        /* ================= HEADER ================= */
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 150px;
+            margin-bottom: 25px;
+        }
+
+        .foto {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 15%;
+            flex-shrink: 0;
+        }
+
+        .identitas {
+            flex: 1;
+        }
+
+        .nama {
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .kontak p {
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+
+        /* ================= JUDUL ================= */
+
+        .judul {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        /* Hanya 3 judul yang mempunyai garis */
+        .garis {
+            border-top: 3px solid black;
+            padding-top: 10px;
+        }
+
+
+        /* ================= TENTANG SAYA ================= */
+
+        .tentang {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+
+        /* ================= PENDIDIKAN ================= */
+
+        .pendidikan-item {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            margin-bottom: 20px;
+        }
+
+        .tahun {
+            font-size: 18px;
+            font-weight: bold;
+            padding-left: 10px;
+        }
+
+        .sekolah h3 {
+            font-size: 21px;
+            font-weight: normal;
+            margin-bottom: 3px;
+        }
+
+        .sekolah p {
+            font-size: 15px;
+            margin-bottom: 2px;
+        }
+
+
+        /* ================= PENGALAMAN ================= */
+
+        .pengalaman {
+            margin-bottom: 20px;
+        }
+
+        .pengalaman h3 {
+            font-size: 21px;
+            margin-bottom: 5px;
+        }
+
+        .pengalaman p {
+            font-size: 17px;
+            margin-bottom: 5px;
+            text-align: justify;
+        }
+
+        .pengalaman ul {
+            padding-left: 25px;
+        }
+
+        .pengalaman li {
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+
+
+        /* ================= KEMAMPUAN ================= */
+
+        .kemampuan {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kemampuan ul {
+            padding-left: 25px;
+        }
+
+        .kemampuan li {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+
+        /* ================= TAMPILAN HP ================= */
+
+        @media (max-width: 700px) {
+
+            body {
+                padding: 15px;
+            }
+
+            .header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            .nama {
+                font-size: 32px;
+            }
+
+            .pendidikan-item {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .tahun {
+                padding-left: 0;
+            }
+
+            .kemampuan {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <img src="fotozahra.jpg" alt="Foto Zahratul Maulida" class="foto">
+
+            <div class="identitas">
+
+                <h1 class="nama">ZAHRATUL MAULIDA</h1>
+
+                <div class="kontak">
+                    <p>📱 +62 858-4527-8573</p>
+                    <p>📧 zhraatulmllda@gmail.com</p>
+                    <p>📍 Perumahan Griya Permata Asri Jl. Wesser Blok F/67 RT 53</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- TENTANG SAYA -->
+        <h2 class="judul garis">TENTANG SAYA</h2>
+
+        <p class="tentang">
+            Mahasiswa Bisnis Digital yang memiliki pengalaman membantu usaha
+            keluarga dalam menawarkan dan menjual makanan serta minuman kepada
+            teman dan lingkungan sekitar. Memiliki kemampuan komunikasi yang baik,
+            mampu berinteraksi dengan calon pembeli, dan memiliki ketertarikan
+            pada bidang pemasaran. Saya juga memiliki semangat belajar,
+            bertanggung jawab, dan siap mengembangkan kemampuan melalui
+            pengalaman baru.
+        </p>
+
+
+        <!-- PENDIDIKAN -->
+        <h2 class="judul garis">PENDIDIKAN</h2>
+
+        <div class="pendidikan-item">
+
+            <div class="tahun">
+                • 2023 - 2026
+            </div>
+
+            <div class="sekolah">
+                <h3>Madrasah Aliyah Negeri Balikpapan</h3>
+                <p>Jurusan IPS</p>
+            </div>
+
+        </div>
+
+
+        <div class="pendidikan-item">
+
+            <div class="tahun">
+                • 2026 - 2030
+            </div>
+
+            <div class="sekolah">
+                <h3>Politeknik Negeri Banjarmasin</h3>
+                <p>Jurusan Administrasi Bisnis - Program Studi Bisnis Digital</p>
+            </div>
+
+        </div>
+
+
+        <!-- PENGALAMAN -->
+        <h2 class="judul">PENGALAMAN</h2>
+
+        <div class="pengalaman">
+
+            <h3>Membantu Penjualan Usaha Keluarga</h3>
+
+            <p>
+                Membantu menawarkan dan menjual produk makanan serta minuman
+                kepada teman dan lingkungan sekitar.
+            </p>
+
+            <ul>
+                <li>Menawarkan produk secara langsung kepada teman.</li>
+                <li>Melayani pesanan dan berkomunikasi dengan calon pembeli.</li>
+                <li>Membantu mencatat pesanan dan melakukan transaksi sederhana.</li>
+                <li>Mengenalkan produk kepada calon pembeli dengan cara yang ramah.</li>
+                <li>Membantu mempromosikan produk melalui komunikasi.</li>
+            </ul>
+
+        </div>
+
+
+        <!-- KEMAMPUAN -->
+        <h2 class="judul garis">KEMAMPUAN</h2>
+
+        <div class="kemampuan">
+
+            <ul>
+                <li>Komunikasi dan pelayanan pelanggan</li>
+                <li>Menawarkan dan mempromosikan produk</li>
+                <li>Kemampuan berinteraksi dengan orang lain</li>
+                <li>Manajemen waktu</li>
+            </ul>
+
+            <ul>
+                <li>Membangun hubungan dengan pelanggan</li>
+                <li>Melayani dan menangani pesanan</li>
+                <li>Bertanggung jawab dan dapat dipercaya</li>
+                <li>Mau belajar dan beradaptasi</li>
+            </ul>
+
+            <ul>
+                <li>Mampu bekerja sama dalam tim</li>
+                <li>Mampu bekerja secara mandiri</li>
+                <li>Teliti dalam mencatat pesanan</li>
+                <li>Negosiasi sederhana</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
